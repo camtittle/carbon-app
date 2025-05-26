@@ -1,7 +1,7 @@
 {
-  "name": "chat-app",
+  "name": "carbon-app",
   "version": "1.0.0",
-  "description": "Chat app MVP",
+  "description": "Carbon app MVP",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

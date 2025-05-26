@@ -1,5 +1,5 @@
 {
-  "name": "@chat-app/common",
+  "name": "@carbon-app/common",
   "version": "1.0.0",
   "exports": "./index.ts",
   "scripts": {

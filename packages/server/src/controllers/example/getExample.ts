@@ -1,4 +1,4 @@
-import { postExampleRequestSchema } from "@chat-app/common";
+import { postExampleRequestSchema } from "@carbon-app/common";
 import { Request, Response } from "express";
 
 export const getExample = async (req: Request, res: Response) => {
