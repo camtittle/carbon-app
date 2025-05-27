@@ -14,4 +14,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Add DB models here
+enum ProjectStatus {
+  UnderDevelopment
+  UnderValidation
+  RegistrationRequested
+}
+
+model Project {
+  id      String        @id @default(uuid()) @db.Uuid
+  url     String
+  status  ProjectStatus
+  country String?
+}

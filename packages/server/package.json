@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && npm run prisma:build",
+    "build": "npm run prisma:generate && tsc && npm run prisma:build",
     "start": "node dist",
-    "dev": "npm run build && npm run prisma:generate && tsc-watch --onSuccess \"npm run prisma:build\" & nodemon dist/server/src",
+    "dev": "npm run build && tsc-watch --onSuccess \"npm run prisma:build\" & nodemon dist/server/src",
     "db:dev": "docker compose up -d && npm run prisma:migrate && npm run db:seed",
     "db:seed": "npm run build && node ./dist/server/src/scripts/seedDb.js",
     "prisma:generate": "npx prisma generate",
@@ -18,8 +18,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@prisma/client": "^6.8.2",
     "@carbon-app/common": "*",
+    "@prisma/client": "^6.8.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
@@ -30,7 +30,7 @@
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",
     "nodemon": "^3.1.10",
-    "ts-node-dev": "^2.0.0",
+    "ts-node": "^10.9.2",
     "tsc-watch": "^6.3.1",
     "typescript": "^5.8.3"
   }

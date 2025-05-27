@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "moduleResolution": "NodeNext",
     "outDir": "./dist",
+    "rootDir": "..",
     "paths": {
       "@chat-app/common": ["../common/src/index.ts"]
     }
