@@ -7,7 +7,7 @@ const projectStatusMap: Record<ProjectStatus, ApiProjectStatus> = {
   [ProjectStatus.UnderValidation]: ApiProjectStatus.UnderValidation,
 }
 
-const mapProjectStatusToResponse = (status: ProjectStatus): ApiProjectStatus => {
+export const mapProjectStatusToResponse = (status: ProjectStatus): ApiProjectStatus => {
   const mappedStatus = projectStatusMap[status]
   if (!mappedStatus) {
     throw new Error(`Unknown project status: ${status}`)

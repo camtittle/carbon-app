@@ -1,5 +1,5 @@
 import { PrismaClient, ProjectStatus } from "../generated/prisma/index.js"
-import dotenv from 'dotenv'
+import dotenv from '@dotenvx/dotenvx'
 
 dotenv.config()
 

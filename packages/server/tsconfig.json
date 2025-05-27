@@ -16,6 +16,9 @@
       "@carbon-app/common": [
         "../common/src/index.ts"
       ]
-    }
+    },
+    "types": [
+      "vitest/globals"
+    ]
   }
 }
