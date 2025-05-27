@@ -11,7 +11,7 @@ export const ProjectsList = ({ projects }: ProjectsListProps) => {
     <ProjectsContainer>
       {
         projects.map(project =>
-          <Card key={project.id}>
+          <Card key={project.id} label={project.id}>
             <h3>{project.id}</h3>
             <p>Status: {project.status}</p>
             <p>Country: {project.country ?? "N/A"}</p>
