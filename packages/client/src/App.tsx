@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { ProjectsPage } from './pages/Projects'
+import { ProjectsPage } from './pages/Projects/ProjectsPage'
 import { Nav } from './components/Nav'
 import { HomePage } from './pages/Home'
 import { Container } from './components/Container'
